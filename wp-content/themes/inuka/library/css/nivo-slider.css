@@ -1,0 +1,224 @@
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/*
+.nivo-caption h3 {
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-family: 'Halis R', 'Fira Sans Condensed';
+    font-size: 2.6em;
+
+    -webkit-text-shadow: 1px 1px 7px #000;
+    -moz-text-shadow: 1px 1px 7px #000;
+    -ms-text-shadow: 1px 1px 7px #000;
+    -o-text-shadow: 1px 1px 7px #000;
+    text-shadow: 1px 1px 7px #000;
+}
+*/
+
+.nivo-caption {
+    position: absolute;
+    left: 5%;
+    bottom: 0px;
+    background: transparent;
+    width: 90%;
+    z-index: 10;
+    padding: 5px 10px;
+    opacity: 1.0;
+    overflow: hidden;
+    display: none;
+    -moz-opacity: 1.0;
+    filter: alpha(opacity=10);
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+/*
+.nivo-caption a {
+    color: #FFF;
+    background: #eb274e;
+    display: inline !important;
+    text-decoration: none !important;
+    border-bottom: 0px !important;
+    font-size: .9em;
+    letter-spacing: 2px;
+    padding: 20px 30px;
+    font-weight: 300;
+    font-family: 'Halis R', 'Fira Sans Condensed';
+}
+.nivo-caption a:hover, .nivo-caption a:active {
+    background: #000;
+    color: #eb274e;
+}
+.cont_info a:hover, .cont_info a:focus {
+    color: #FFF;
+}
+*/
+
+.theme-default .nivoSlider {
+    margin-bottom: 0px;
+}
+
+
+figure.cap_link {
+    margin: 30px 0px;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+.theme-default .nivoSlider {
+    box-shadow: none !important;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.outer2 {
+    bottom: 10px;
+    position: absolute;
+    text-align: left;
+}
+
+.nivo-caption {
+    height: 100%;
+}
+
+ul.global_CTA li.cta_one a {
+    color: #000;
+}
+ul.global_CTA li.cta_one a:hover {
+    color: #000;
+    background: rgba(255,2552,255,0.8);
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .outer {
+        position: relative !important;
+        background: #080808 !important;
+    }
+    .nivo-caption {
+        position: relative !important;
+        left: 0% !important;
+        bottom: 0px !important;
+        padding: 0px 0px !important;
+        width: 100% !important;
+    }
+    .cap_con_in {
+        padding-top: 15px !important;
+    }
+    .nivo-directionNav a {
+        top: 20% !important;
+    }
+    .nivo-caption a {
+        font-size: 1.5em !important;
+        padding: 10px 25px !important;
+    }
+    figure.cap_link {
+        margin: 20px 0px !important;
+    }
+    .slider-wrapper.theme-default {
+        margin-top: 45px;
+    }
+
+    .containerZ img {
+        width: 100%;
+    }
+    .containerZ {
+        text-align: center;
+        padding: 0px;
+    }
+
+
+}
